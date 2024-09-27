@@ -21,7 +21,7 @@ steps:
 - uses: actions/setup-dotnet@v4
   with:
     dotnet-version: '7.0.x'
-- uses: actions/cryptic-wizard/run-specflow-tests@v1.3.3
+- uses: cryptic-wizard/run-specflow-tests@v1.3.3
   with:
     test-assembly-path: MySpecflowProject/bin/Release/net7.0
     test-assembly-dll: MySpecflowProject.dll
@@ -43,7 +43,7 @@ jobs:
   - uses: actions/setup-dotnet@v4
     with:
       dotnet-version: '7.0.x'
-  - uses: actions/cryptic-wizard/run-specflow-tests@v1.3.3
+  - uses: cryptic-wizard/run-specflow-tests@v1.3.3
     with:
       test-assembly-path: MySpecflowProject/bin/Release/net7.0
       test-assembly-dll: MySpecflowProject.dll
@@ -60,7 +60,7 @@ jobs:
 
 #### Optional parameters:
 ```yaml
-- uses: actions/cryptic-wizard/run-specflow-tests@v1.3.3
+- uses: cryptic-wizard/run-specflow-tests@v1.3.3
   with:
     test-assembly-path: MySpecflowProject/bin/Debug/net7.0
     test-assembly-dll: MySpecflowProject.dll
